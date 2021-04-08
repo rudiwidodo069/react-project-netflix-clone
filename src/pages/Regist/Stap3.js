@@ -238,7 +238,7 @@ export function GridRow5({ active }) {
                     return (
                         <div
                             key={value.id}
-                            className={`text-gray-500 text-2xl py-2 mt-5 col-start-${value.gridStart} box-idr || xs:col-start-auto xs:mt-0 `}>
+                            className={`text-gray-500 text-2xl py-2 mt-5 lg:col-start-${value.gridStart} box-idr || xs:col-start-auto xs:mt-0 `}>
                             <div className={`font-bold text-center ${value.gridStart === active ? 'text-active' : ''}`}>
                                 <div className="text-lg my-2">
                                     <i className={`${value.watch.phone.icon} text-3xl`}></i>
