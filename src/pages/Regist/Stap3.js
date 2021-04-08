@@ -126,7 +126,9 @@ export function ListItems() {
 export function GridRow1({ active, click }) {
     return (
         <Fragment>
-            <div className="xs:hidden lg:block lg:col-span-2 lg:col-start-1"></div>
+            <div className="xs:hidden lg:block lg:col-span-2 lg:col-start-1">
+                <div className="w-full ring-2 p-1"></div>
+            </div>
             {RegisterComponentJson.stap3.map(value => {
                 return (
                     <div
