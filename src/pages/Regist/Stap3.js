@@ -129,8 +129,8 @@ export function GridRow1({ active, click }) {
             {RegisterComponentJson.stap3.map(value => {
                 return (
                     <div
-                        key={value.id}
-                        className={`lg:col-start-${value.gridStart} xs:col-start-${value.gridStart - 2}`}>
+                        key={value.gridStart}
+                        className={`lg:col-start-${value.gridStart} grid xs:col-start-${value.gridStart - 2} relative`}>
                         <div
                             onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
                             className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
