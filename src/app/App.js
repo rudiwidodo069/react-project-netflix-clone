@@ -21,11 +21,11 @@ function App() {
         <Switch>
           <Route exact path="/" render={() => <Main _props={UserContext} />} />
           <Route path={`/sign-in`} component={Login} />
-          <Route path={`/sign-up-step-1`} component={RegistStap1} />
-          <Route path={`/sign-up-step-2`} component={RegistStap2} />
-          <Route path={`/sign-up-step-3`} component={RegistStap3} />
-          <Route path={`/sign-up-step-payment`} component={RegistStapPayment} />
-          <Route path={`/sign-up-step-payment-confirmation`} component={RegistStapPaymentConfirmation} />
+          <Route path={`/sign-up-stap-1`} component={RegistStap1} />
+          <Route path={`/sign-up-stap-2`} component={RegistStap2} />
+          <Route path={`/sign-up-stap-3`} component={RegistStap3} />
+          <Route path={`/sign-up-stap-payment`} component={RegistStapPayment} />
+          <Route path={`/sign-up-stap-payment-confirmation`} component={RegistStapPaymentConfirmation} />
           <Route path={`/netflix-clone-home`} component={Home} />
         </Switch>
       </Router>
