@@ -130,7 +130,7 @@ export function GridRow1({ active, click }) {
                 <div key={i}>
                     <div className="lg:col-span-2 lg:block xs:hidden relative"></div>
                     <div
-                        className={`lg:col-start-${value.gridStart} grid xs:col-start-${value.gridStart - 2}`}>
+                        className={`lg:col-start-${value.gridStart} xs:col-start-${value.gridStart - 2}`}>
                         <div
                             onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
                             className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
