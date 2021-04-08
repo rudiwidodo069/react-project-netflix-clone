@@ -228,7 +228,7 @@ export function GridRow4({ active }) {
 export function GridRow5({ active }) {
     return (
         <>
-            <div className="xs:col-span-4 xs:row-start-auto lg:col-span-2 py-2 mt-5 || xs:mt-2">
+            <div className="xs:col-span-4 xs:row-start-auto lg:row-start-5 lg:col-span-2 py-2 mt-5 || xs:mt-2">
                 <div className="text-black font-normal || xs:text-center xs:text-sm sm:text-lg md:text-xl lg:text-2xl lg:text-left">
                     Devices you can use to watch
                 </div>
