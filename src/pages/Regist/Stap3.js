@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 import { useHistory } from 'react-router-dom';
 
@@ -125,20 +125,25 @@ export function ListItems() {
 
 export function GridRow1({ active, click }) {
     return (
-        RegisterComponentJson.stap3.map(value => {
-            return (
-                <div
-                    key={value.id}
-                    className={` xs:col-start-${value.gridStart - 2} lg:col-start-${value.gridStart + 2}`}>
+        <Fragment>
+            <div className="xs:col-span-4 lg:col-span-2 lg:row-start-1">
+            </div>
+            {RegisterComponentJson.stap3.map(value => {
+                return (
                     <div
-                        onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
-                        className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
-                        value={value.title}>
-                        {value.title}
+                        key={value.id}
+                        className={` xs:col-start-${value.gridStart - 2} lg:col-start-${value.gridStart}`}>
+                        <div
+                            onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
+                            className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
+                            value={value.title}>
+                            {value.title}
+                        </div>
                     </div>
-                </div>
-            )
-        })
+                )
+            })
+            }
+        </Fragment>
     )
 }
 
