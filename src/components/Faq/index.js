@@ -36,7 +36,7 @@ export default function Index({ children, userConsumer }) {
                             key={value.id}
                             className="lg:w-8/12 md:10/12 xs:w-full mx-auto bg-gray-600 bg-opacity-50 p-5 my-2">
                             <div className="grid grid-cols-2">
-                                <div className="text-white lg:text-3xl md:text-2xl font-normal text-left">
+                                <div className="text-white lg:text-3xl md:text-2xl xs:text-xl font-normal text-left">
                                     {value.title}
                                 </div>
                                 <div className="text-5xl text-white font-normal text-right cursor-pointer">
@@ -50,7 +50,7 @@ export default function Index({ children, userConsumer }) {
                                 </div>
                                 {
                                     faqOpen.id === value.id ?
-                                        <div className="mt-8 py-5 col-span-2 border-t-2 border-black text-2xl text-white font-normal">
+                                        <div className="mt-8 py-5 col-span-2 border-t-2 border-black lg:text-2xl md:text-xl xs:text-lg text-white font-normal">
                                             {value.text}
                                         </div> : ''
                                 }

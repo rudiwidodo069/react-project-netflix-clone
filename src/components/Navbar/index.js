@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 // static images
 import banner from '../../assets/logo/logo.png';
@@ -7,6 +8,7 @@ import banner from '../../assets/logo/logo.png';
 import './navbar.css';
 
 export default function index() {
+    const history = useHistory();
     return (
         <nav className="navbar p-3 h-20 w-full absolute top-0">
             <div className="sm:container mx-auto">
