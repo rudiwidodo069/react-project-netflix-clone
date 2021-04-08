@@ -1,0 +1,51 @@
+.stap-3 .box-click .active {
+  background-color: rgb(220, 38, 38);
+  position: relative;
+}
+
+.stap-3 .box-click .active::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: rgb(220, 38, 38);
+  position: absolute;
+  bottom: -10px;
+  left: 44%;
+  transform: rotate(45deg);
+}
+
+.stap-3 .box-idr .text-active {
+  color: rgb(220, 38, 38);
+}
+
+/* step payment */
+.step-payment .spiner-loading-button {
+  width: 60px;
+  position: absolute;
+  top: 15%;
+  left: 48%;
+  animation: spiner-loading 1s ease-in infinite;
+}
+
+@keyframes spiner-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1280px) {
+  .stap-3 .box-click .active::after {
+    content: "";
+    bottom: -10px;
+    left: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  .step-payment .spiner-loading-button {
+    left: 45%;
+  }
+}

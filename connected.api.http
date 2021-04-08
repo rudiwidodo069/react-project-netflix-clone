@@ -1,0 +1,17 @@
+GET https://api.themoviedb.org/3/movie/399566?api_key=a8b2c2c23d167eaef90511d8bd6825a6&language=en-US
+
+
+### get video
+GET https://api.themoviedb.org/3/movie/399566/videos?api_key=a8b2c2c23d167eaef90511d8bd6825a6&language=en-US
+
+### watch provider
+GET https://api.themoviedb.org/3/movie/399566/watch/providers?api_key=a8b2c2c23d167eaef90511d8bd6825a6
+
+###
+GET https://api.themoviedb.org/3/movie/now_playing?api_key=a8b2c2c23d167eaef90511d8bd6825a6&language=en-US&page=1
+
+### get example
+GET https://api.themoviedb.org/3/movie/550?api_key=a8b2c2c23d167eaef90511d8bd6825a6
+
+### get popular
+GET https://api.themoviedb.org/3/movie/popular?api_key=a8b2c2c23d167eaef90511d8bd6825a6&language=en-US&page=1

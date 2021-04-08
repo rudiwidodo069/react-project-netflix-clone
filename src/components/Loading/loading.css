@@ -1,0 +1,12 @@
+.loading .loading-spiner img {
+  animation: spiner-loading 1s ease-in infinite;
+}
+
+@keyframes spiner-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

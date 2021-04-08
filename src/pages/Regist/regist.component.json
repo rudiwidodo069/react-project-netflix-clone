@@ -1,0 +1,124 @@
+{
+    "stap3" : [
+        {
+            "id" : 1,
+            "title" : "Mobile",
+            "gridStart" : 3,
+            "text" : [
+                {
+                    "idr" : "IDR54,000",
+                    "quality" : "Good",
+                    "resolution" : "480p"
+                }
+            ],
+            "watch" : {
+                    "phone" : {
+                        "icon" : "bi bi-phone",
+                        "label" : "phone"
+                    },
+                    "tablet" : {
+                        "icon" : "bi bi-tablet",
+                        "label" : "tablet"
+                    },
+                    "computer" : {
+                        "icon" : "",
+                        "label" : ""
+                    },
+                    "tv" :{
+                        "icon" : "",
+                        "label" : ""
+                    }
+                }
+        },
+        {
+            "id" : 2,
+            "title" : "Mobile +",
+            "gridStart" : 4,
+            "text" : [
+                {
+                    "idr" : "IDR79,000",
+                    "quality" : "Better",
+                    "resolution" : "1080p"
+                }
+            ],
+            "watch" : {
+                "phone" : {
+                    "icon" : "bi bi-phone",
+                    "label" : "phone"
+                },
+                "tablet" : {
+                    "icon" : "bi bi-tablet",
+                    "label" : "tablet"
+                },
+                "computer" : {
+                    "icon" : "bi bi-laptop",
+                    "label" : "computer"
+                },
+                "tv" :{
+                    "icon" : "",
+                    "label" : ""
+                }
+            }           
+        },
+        {
+            "id" : 3,
+            "title" : "Standard",
+            "gridStart" : 5,
+            "text" : [
+                {
+                    "idr" : "IDR153,000",
+                    "quality" : "Better",
+                    "resolution" : "1080p"
+                }
+            ],
+            "watch" : {
+                "phone" : {
+                    "icon" : "bi bi-phone",
+                    "label" : "phone"
+                },
+                "tablet" : {
+                    "icon" : "bi bi-tablet",
+                    "label" : "tablet"
+                },
+                "computer" : {
+                    "icon" : "bi bi-laptop",
+                    "label" : "computer"
+                },
+                "tv" :{
+                    "icon" : "bi bi-tv",
+                    "label" : "TV"
+                }
+            }
+        },
+        {
+            "id" : 4,
+            "title" : "Premium",
+            "gridStart" : 6,
+            "text" : [
+                {
+                    "idr" : "IDR186,000",
+                    "quality" : "Best",
+                    "resolution" : "4K+HDR"
+                }
+            ],
+            "watch" : {
+                "phone" : {
+                    "icon" : "bi bi-phone",
+                    "label" : "phone"
+                },
+                "tablet" : {
+                    "icon" : "bi bi-tablet",
+                    "label" : "tablet"
+                },
+                "computer" : {
+                    "icon" : "bi bi-laptop",
+                    "label" : "computer"
+                },
+                "tv" :{
+                    "icon" : "bi bi-tv",
+                    "label" : "TV"
+                }
+            }
+        }
+    ]
+}

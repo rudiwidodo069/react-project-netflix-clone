@@ -1,0 +1,15 @@
+.jumbotron {
+  background-image: url("../../assets/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron .box-text {
+  padding: 15% 0;
+}
+
+@media (max-width: 768px) {
+  .jumbotron .box-text {
+    padding: 20% 0;
+  }
+}

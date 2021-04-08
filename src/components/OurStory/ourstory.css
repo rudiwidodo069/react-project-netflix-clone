@@ -1,0 +1,11 @@
+/* our stoury card */
+.our-story-card {
+  padding: 50px 5%;
+}
+
+.our-story-card .box-our-story .box-video {
+  min-width: 65%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
