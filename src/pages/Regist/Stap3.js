@@ -65,7 +65,7 @@ export default function Index() {
                     Choose the plan that’s right for you
                 </div>
                 <ListItems />
-                <div className="grid lg:grid-cols-6 xs:grid-cols-4 box-click">
+                <div className="grid lg:grid-cols-6 xs:grid-cols-4 box-click ring-2">
                     <GridRow1
                         active={active}
                         click={(col, title, idr) => handleActive(col, title, idr)} />
@@ -126,13 +126,11 @@ export function ListItems() {
 export function GridRow1({ active, click }) {
     return (
         <Fragment>
-            <div className="xs:col-span-4 lg:col-span-2">
-            </div>
             {RegisterComponentJson.stap3.map(value => {
                 return (
                     <div
                         key={value.id}
-                        className={` xs:col-start-${value.gridStart - 2} lg:col-start-${value.gridStart}`}>
+                        className={` xs:col-start-${value.gridStart - 2} lg:row-start-1 lg:col-start-${value.gridStart}`}>
                         <div
                             onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
                             className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
