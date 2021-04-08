@@ -43,11 +43,11 @@ export default function Index() {
     return (
         <div className="login w-full h-screen xl:h-screen md:h-full">
             <div className="w-full h-full lg:bg-black lg:bg-opacity-50 md:bg-black sm:bg-black xs:bg-black">
-                <div className="lg:container lg:mx-auto pb-20 xs:pb-0 xs:px-3">
+                <div className="lg:container lg:mx-auto pb-10 xs:pb-0 xs:px-3">
                     <div className="w-full h-20 flex items-center">
                         <img src={banner} alt="netflix clone banner" className="w-44 h-full" />
                     </div>
-                    <div className="xl:w-4/12 lg:w-6/12 md:w-full sm:w-full xs:w-full bg-black bg-opacity-80 mx-auto rounded-2xl lg:p-20 md:py-20 mt-5">
+                    <div className="xl:w-4/12 lg:w-6/12 md:w-full sm:w-full xs:w-full bg-black bg-opacity-80 mx-auto rounded-xl lg:p-10 md:py-10 mt-5">
                         <div className="text-white text-4xl font-bold">Sign In</div>
                         <div className="my-10 w-full h-14">
                             <input
