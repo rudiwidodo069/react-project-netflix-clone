@@ -17,7 +17,7 @@ import { UserContext, user } from '../utils/UserContext';
 function App() {
   return (
     <UserContext.Provider value={user}>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
           <Route exact path="/" render={() => <Main _props={UserContext} />} />
           <Route path={`/sign-in`} component={Login} />
