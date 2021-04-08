@@ -126,14 +126,14 @@ export function ListItems() {
 export function GridRow1({ active, click }) {
     return (
         <Fragment>
-            <div className="xs:hidden lg:block lg:col-span-2 lg:col-start-1">
+            {/* <div className="xs:hidden lg:block lg:col-span-2 lg:col-start-1">
                 <div className="w-full ring-2 p-1"></div>
-            </div>
+            </div> */}
             {RegisterComponentJson.stap3.map(value => {
                 return (
                     <div
                         key={value.id}
-                        className={` xs:col-start-${value.gridStart - 2} lg:row-start-1 lg:col-start-${value.gridStart}`}>
+                        className={` xs:col-start-${value.gridStart - 2} lg:col-start-${value.gridStart}`}>
                         <div
                             onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
                             className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
