@@ -47,9 +47,9 @@ export default function Index() {
                     <div className="w-full h-20 flex items-center">
                         <img src={banner} alt="netflix clone banner" className="w-44 h-full" />
                     </div>
-                    <div className="xl:w-4/12 lg:w-6/12 md:w-full sm:w-full xs:w-full bg-black bg-opacity-80 mx-auto rounded-xl lg:p-10 md:py-10 mt-5">
+                    <div className="xl:w-4/12 lg:w-6/12 md:w-full sm:w-full xs:w-full bg-black bg-opacity-80 mx-auto rounded-sm lg:p-5 md:py-5 mt-5">
                         <div className="text-white text-4xl font-bold">Sign In</div>
-                        <div className="my-10 w-full h-14">
+                        <div className="my-5 w-full h-14">
                             <input
                                 type="text"
                                 name="email"
@@ -58,7 +58,7 @@ export default function Index() {
                                 onChange={evt => setEmail(evt.target.value)}
                                 className="w-full h-full outline-none ring-1 ring-gray-500 bg-gray-500 bg-opacity-60 p-5 text-lg rounded-sm text-gray-400" />
                         </div>
-                        <div className="my-10 w-full h-14">
+                        <div className="my-5 w-full h-14">
                             <input
                                 type="password"
                                 name="password"
@@ -67,7 +67,7 @@ export default function Index() {
                                 onChange={evt => setPassword(evt.target.value)}
                                 className="w-full h-full outline-none ring-1 ring-gray-500 bg-gray-500 bg-opacity-60 p-5 text-lg rounded-sm text-gray-400" />
                         </div>
-                        <div className="mt-14 mb-8">
+                        <div className="mt-4 mb-4">
                             <button
                                 onClick={() => handleButtonSignIn()}
                                 className="w-full h-14 bg-red-600 text-white text-xl font-bold outline-none border-none rounded-sm focus:outline-none">Sigin In</button>
