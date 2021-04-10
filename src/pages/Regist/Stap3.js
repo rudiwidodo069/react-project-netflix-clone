@@ -125,20 +125,29 @@ export function ListItems() {
 
 export function GridRow1({ active, click }) {
     return (
-        RegisterComponentJson.stap3.map(value => {
-            return (
-                <div
-                    key={value.id}
-                    className={`lg:col-start-${value.gridStart} xs:col-start-${value.gridStart - 2} box-grid`}>
-                    <div
-                        onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
-                        className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
-                        value={value.title}>
-                        {value.title}
-                    </div>
+        <>
+            <div className="xs:hidden lg:col-span-2 lg:row-start-1 || border-b-4 py-2 mt-5">
+                <div className="text-black font-normal || xs:text-center xs:text-sm sm:text-lg md:text-xl lg:text-left lg:text-2xl">
+                    bajingan
                 </div>
-            )
-        })
+            </div>
+            {
+                RegisterComponentJson.stap3.map(value => {
+                    return (
+                        <div
+                            key={value.id}
+                            className={`lg:col-start-${value.gridStart} xs:col-start-${value.gridStart - 2} box-grid`}>
+                            <div
+                                onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
+                                className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
+                                value={value.title}>
+                                {value.title}
+                            </div>
+                        </div>
+                    )
+                })
+            }
+        </>
     )
 }
 
