@@ -125,12 +125,12 @@ export function ListItems() {
 
 export function GridRow1({ active, click }) {
     return (
-        RegisterComponentJson.stap3.map((value, i) => {
-            return (
-                <div key={i}>
-                    <div className="lg:col-span-2 lg:block xs:hidden relative"></div>
+        <Fragment>
+            {RegisterComponentJson.stap3.map(value => {
+                return (
                     <div
-                        className={`lg:col-start-${value.gridStart} xs:col-start-${value.gridStart - 2}`}>
+                        key={value.gridStart}
+                        className={`lg:col-start-${value.gridStart}`}>
                         <div
                             onClick={() => click(value.gridStart, value.title, value.text[0].idr)}
                             className={`xs:w-20 xs:h-20 xs:text-sm xl:w-32 xl:h-32 xl:text-2xl mx-auto bg-red-400 flex justify-center items-center text-white font-bold cursor-pointer active-box ${value.gridStart === active ? `active` : ''}`}
@@ -138,9 +138,10 @@ export function GridRow1({ active, click }) {
                             {value.title}
                         </div>
                     </div>
-                </div>
-            )
-        })
+                )
+            })
+            }
+        </Fragment>
     )
 }
 
