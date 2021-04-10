@@ -126,7 +126,7 @@ export function ListItems() {
 export function GridRow1({ active, click }) {
     return (
         <>
-            <div className="grid-hidden lg:col-span-2 lg:row-start-1"></div>
+            <div className="grid-hidden col-span-2 row-start-1"></div>
             {
                 RegisterComponentJson.stap3.map(value => {
                     return (
