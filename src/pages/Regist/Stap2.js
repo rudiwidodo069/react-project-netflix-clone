@@ -24,7 +24,7 @@ export default function Index() {
                     Choose your plan.
                 </div>
                 <ListItems />
-                <div className="xl:w-7/12 lg:w-7/12 md:w-7/12 sm:w-10-12 xs:w-full h-20 mx-auto my-3 text-white xs:text-3xl sm:text-3xl md:text-4xl">
+                <div className="xl:w-7/12 lg:w-7/12 md:w-7/12 sm:w-10-12 xs:w-full h-16 mx-auto my-3 text-white xs:text-3xl sm:text-3xl md:text-4xl">
                     <button
                         onClick={handleNextStep}
                         className="h-full w-full bg-red-600 rounded-lg font-bold border-none focus:outline-none">See the plans</button>

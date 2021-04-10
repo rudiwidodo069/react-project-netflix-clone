@@ -14,12 +14,6 @@
   transform: rotate(45deg);
 }
 
-@media (min-width : 1020px){
-  .box-click .box-grid {
-    grid-column-start: 3;
-  }
-}
-
 .stap-3 .box-idr .text-active {
   color: rgb(220, 38, 38);
 }

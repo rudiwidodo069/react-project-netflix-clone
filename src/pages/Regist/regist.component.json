@@ -2,6 +2,66 @@
     "stap3" : [
         {
             "id" : 1,
+            "title" : "",
+            "gridStart" : "",
+            "text" : [
+                {
+                    "idr" : "",
+                    "quality" : "",
+                    "resolution" : ""
+                }
+            ],
+            "watch" : {
+                    "phone" : {
+                        "icon" : "",
+                        "label" : ""
+                    },
+                    "tablet" : {
+                        "icon" : "",
+                        "label" : ""
+                    },
+                    "computer" : {
+                        "icon" : "",
+                        "label" : ""
+                    },
+                    "tv" :{
+                        "icon" : "",
+                        "label" : ""
+                    }
+                }
+        },
+        {
+            "id" : 2,
+            "title" : "",
+            "gridStart" : "",
+            "text" : [
+                {
+                    "idr" : "",
+                    "quality" : "",
+                    "resolution" : ""
+                }
+            ],
+            "watch" : {
+                    "phone" : {
+                        "icon" : "",
+                        "label" : ""
+                    },
+                    "tablet" : {
+                        "icon" : "",
+                        "label" : ""
+                    },
+                    "computer" : {
+                        "icon" : "",
+                        "label" : ""
+                    },
+                    "tv" :{
+                        "icon" : "",
+                        "label" : ""
+                    }
+                }
+        },
+        {
+            "id" : 3,
             "title" : "Mobile",
             "gridStart" : 3,
             "text" : [
@@ -31,7 +91,7 @@
                 }
         },
         {
-            "id" : 2,
+            "id" : 4,
             "title" : "Mobile +",
             "gridStart" : 4,
             "text" : [
@@ -61,7 +121,7 @@
             }           
         },
         {
-            "id" : 3,
+            "id" : 5,
             "title" : "Standard",
             "gridStart" : 5,
             "text" : [
@@ -91,7 +151,7 @@
             }
         },
         {
-            "id" : 4,
+            "id" : 6,
             "title" : "Premium",
             "gridStart" : 6,
             "text" : [

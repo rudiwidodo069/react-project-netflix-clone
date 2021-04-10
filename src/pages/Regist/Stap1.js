@@ -67,7 +67,7 @@ export default function Index() {
                     <div className="font-bold">{email}</div>
                 </div>
                 <div className="mt-4">
-                    <div className="h-20 w-full">
+                    <div className="h-16 w-full">
                         <input
                             type="password"
                             name="password"
@@ -81,7 +81,7 @@ export default function Index() {
                 <div className="mt-5 text-blue-600 text-2xl">
                     <RouteLink to="#" >Forget your Password ?</RouteLink>
                 </div>
-                <div className="mt-4 text-white text-3xl h-20 w-full">
+                <div className="mt-4 text-white text-3xl h-16 w-full">
                     <button
                         onClick={handleButtonContinue}
                         className="h-full w-full bg-red-600 font-bold rounded-lg border-none focus:outline-none">Continue</button>
