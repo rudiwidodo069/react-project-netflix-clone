@@ -126,11 +126,7 @@ export function ListItems() {
 export function GridRow1({ active, click }) {
     return (
         <>
-            <div className="xs:hidden lg:col-span-2 lg:row-start-1 || border-b-4 py-2 mt-5">
-                <div className="text-black font-normal || xs:text-center xs:text-sm sm:text-lg md:text-xl lg:text-left lg:text-2xl">
-                    bajingan
-                </div>
-            </div>
+            <div className="grid-hidden lg:col-span-2 lg:row-start-1"></div>
             {
                 RegisterComponentJson.stap3.map(value => {
                     return (

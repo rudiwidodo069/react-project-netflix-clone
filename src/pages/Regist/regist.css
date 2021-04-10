@@ -49,3 +49,15 @@
     left: 45%;
   }
 }
+
+@media (min-width: 1020px) {
+  .grid-hidden {
+    display: block;
+  }
+}
+
+@media (min-width: 345px) {
+  .grid-hidden {
+    display: none;
+  }
+}
